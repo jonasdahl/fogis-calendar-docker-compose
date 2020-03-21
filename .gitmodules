@@ -1,0 +1,6 @@
+[submodule "graphql"]
+	path = graphql
+	url = git@github.com:jonasdahl/fogis-graphql.git
+[submodule "calendar-export"]
+	path = calendar-export
+	url = git@github.com:jonasdahl/node-fogis-calendar-export.git
