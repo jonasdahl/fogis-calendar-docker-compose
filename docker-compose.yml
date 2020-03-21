@@ -3,6 +3,7 @@ version: "2"
 services:
   graphql:
     build: ./graphql
+    restart: always
   calendar-export:
     build: ./calendar-export
     environment:
@@ -10,6 +11,7 @@ services:
       - APP_KEY=12345678901234567890abcdefabcdef
       - PORT=4001
       - GRAPHQL_ENDPOINT=http://graphql:4000
+    restart: always
     links:
       - graphql
     ports:
